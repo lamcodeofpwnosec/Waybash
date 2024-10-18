@@ -37,5 +37,7 @@ Enter the domain name (e.g., `example.com`) when prompted. The script will retri
 ```
 cat example.com.txt
 ```
+[![asciicast](https://asciinema.org/a/681742.svg)](https://asciinema.org/a/681742)
+
 > [!NOTE]
 > Copyright [©lamcodeofpwnosec](https://github.com/lamcodeofpwnosec/)
