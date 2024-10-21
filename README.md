@@ -17,6 +17,7 @@ The script retrieves a list of URLs that have been archived over time, offering 
 ## Steps to Install and Run
 You can now use `./wayback.sh -help` to display the help menu and description for each feature. Each feature is now modular and easy to maintain or expand.
 
+[![asciicast](https://asciinema.org/a/682269.svg)](https://asciinema.org/a/682269)
 
 1. Clone or Download the Script
 ```
