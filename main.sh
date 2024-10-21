@@ -1,8 +1,34 @@
 #!/bin/bash
-# Script Name: wayback.sh
+# Script Name: main.sh
 # Description: Main script for Wayback Machine crawling with various features.
 # Author: lmcodeofpwnosec
 # Date: 18/10/2024
+
+# Color Variables
+CYAN='\033[0;36m'
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+
+# Display ASCII logo
+function display_logo() {
+    echo -e "${CYAN}"
+    echo "██╗    ██╗ █████╗ ██╗   ██╗██████╗  █████╗ ███████╗██╗  ██╗"
+    echo "██║    ██║██╔══██╗██║   ██║██╔══██╗██╔══██╗██╔════╝██║  ██║"
+    echo "██║ █╗ ██║███████║██║   ██║██████╔╝███████║███████╗███████║"
+    echo "██║███╗██║██╔══██║██║   ██║██╔═══╝ ██╔══██║╚════██║██╔══██║"
+    echo "╚███╔███╔╝██║  ██║╚██████╔╝██║     ██║  ██║███████║██║  ██║"
+    echo " ╚══╝╚══╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝"
+    echo -e "${NC}"
+}
+
+# Display copyright, author, and current date/time
+function display_info() {
+    echo "==============================================================="
+    echo "Copyright (C) 2024 by lmcodeofpwnosec"
+    echo "Date: $(date +"%Y-%m-%d %H:%M:%S")"
+    echo "==============================================================="
+}
 
 # Display help and usage information
 function display_help() {
@@ -26,7 +52,7 @@ function display_help() {
 
 # Main menu
 function main_menu() {
-    echo "Select a feature:"
+    echo -e "${CYAN}Select a feature:${NC}"
     echo "1) Filter by Date Range"
     echo "2) Include HTTP Status Codes"
     echo "3) Filter by MIME Type"
@@ -43,8 +69,8 @@ function main_menu() {
         4) source ./features/track_changes.sh ;;
         5) source ./features/download_archived.sh ;;
         6) source ./features/verbose_mode.sh ;;
-        7) echo "Exiting..."; exit 0 ;;
-        *) echo "Invalid choice. Please try again."; main_menu ;;
+        7) echo -e "${GREEN}Exiting...${NC}"; exit 0 ;;
+        *) echo -e "${RED}Invalid choice. Please try again.${NC}"; main_menu ;;
     esac
 }
 
@@ -60,5 +86,7 @@ if [[ "$1" == "-exit" ]]; then
     exit 0
 fi
 
-# Run the main menu
+# Run the ASCII art, info, and main menu
+display_logo
+display_info
 main_menu
