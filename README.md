@@ -15,6 +15,9 @@ The script retrieves a list of URLs that have been archived over time, offering 
  * `curl`, `sed`, and `tee` should be installed on the system (most Unix-based systems come with these tools by default).
 
 ## Steps to Install and Run
+You can now use `./wayback.sh -help` to display the help menu and description for each feature. Each feature is now modular and easy to maintain or expand.
+
+
 1. Clone or Download the Script
 ```
 git clone https://github.com/lamcodeofpwnosec/Waybash.git
