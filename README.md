@@ -45,3 +45,5 @@ cat example.com.txt
 
 > [!NOTE]
 > Copyright [©lamcodeofpwnosec](https://github.com/lamcodeofpwnosec/)
+
+[![Star History Chart](https://api.star-history.com/svg?repos=lamcodeofpwnosec/Waybash&type=Date)](https://star-history.com/#lamcodeofpwnosec/Waybash&Date)
